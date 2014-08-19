@@ -95,30 +95,30 @@
     </div>
   </article>
 </slide>
-<slide class="" id="slide-3">
+<slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Stocks vs Bonds: historical examples</h2>
+    <h2>Stocks vs Bonds: historical volatility</h2>
   </hgroup>
-  <article>
-    <p>There were periods when</p>
-  
-    <div class='left' style='float:left;width:48%'>
-     <h3>Bonds outperformed stocks</h3>
+  <article data-timings="">
+    <pre><code class="r">load(&quot;./returnData.RData&quot;)
+library(ggplot2)
+qplot(data=subset(returnData, year %in% 2000:2009), x=year, y=return, 
+      color=variable, geom=&quot;line&quot;) + labs(title = &quot;Value of $1 invested in 2000 through 2009&quot;)
+</code></pre>
 
-    </div>    
-    <div class='right' style='float:right;width:48%'>
-     <h3>Stocks outperformed bonds</h3>
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
 
-    </div>
   </article>
+  <!-- Presenter Notes -->
 </slide>
+
 <slide class="" id="slide-4" style="background:;">
   <hgroup>
     <h2>Next step</h2>
   </hgroup>
   <article data-timings="">
     <ul>
-<li><p>The application with acompanying how-to-use-it <strong>documentation</strong> can be found at
+<li><p>The application with accompanying how-to-use-it <strong>documentation</strong> can be found at
 <a href="http://sbushmanov.shinyapps.io/returns/">http://sbushmanov.shinyapps.io/returns/</a>  </p></li>
 <li><p>The reproducible code for shiny application can be found at 
 <a href="https://github.com/sbushmanov/shiny">https://github.com/sbushmanov/shiny</a></p></li>
@@ -148,7 +148,7 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Stocks vs Bonds: historical examples'>
+        data-slide=3 title='Stocks vs Bonds: historical volatility'>
          3
       </a>
     </li>

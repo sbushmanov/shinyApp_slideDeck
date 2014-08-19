@@ -42,26 +42,26 @@ knit        : slidify::knit2slides
 - higher reward (measured by average long-term returns)
 
 
---- &twocol
+--- 
 
-## Stocks vs Bonds: historical examples
-
-There were periods when
-
-*** {name: left}
-### Bonds outperformed stocks
+## Stocks vs Bonds: historical volatility
 
 
+```r
+load("./returnData.RData")
+library(ggplot2)
+qplot(data=subset(returnData, year %in% 2000:2009), x=year, y=return, 
+      color=variable, geom="line") + labs(title = "Value of $1 invested in 2000 through 2009")
+```
 
-*** {name: right}
-### Stocks outperformed bonds
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
 
 
 ---
 
 ## Next step
 
-- The application with acompanying how-to-use-it **documentation** can be found at
+- The application with accompanying how-to-use-it **documentation** can be found at
 http://sbushmanov.shinyapps.io/returns/  
 
 - The reproducible code for shiny application can be found at 
@@ -69,4 +69,3 @@ https://github.com/sbushmanov/shiny
 
 - Github repository for this slide deck is at
 https://github.com/sbushmanov/shinyApp_slideDeck
-
