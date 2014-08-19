@@ -57,6 +57,9 @@ There were periods when
 
 *** {name: right}
 ### Stocks outperformed bonds
+```{r}
+
+```
 
 ---
 

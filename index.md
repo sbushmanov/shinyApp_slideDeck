@@ -11,7 +11,7 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Who this application is relevant to:
+## Who this application is for:
 
 - Everybody interested in long term performance of stocks and bonds
 - Especially:  
@@ -55,6 +55,7 @@ There were periods when
 
 *** {name: right}
 ### Stocks outperformed bonds
+
 
 ---
 
