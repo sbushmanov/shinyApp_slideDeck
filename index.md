@@ -2,7 +2,7 @@
 title       : "Vizualizing historical performance:"
 subtitle    : Stocks vs Bonds (1871 - 2012)
 author      : Sergey Bushmanov
-job         : 
+job         : Coursera / JHU Data Products Project
 framework   : io2012    # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -11,68 +11,61 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
+## Who this application is relevant to:
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
-
---- .class #id1
-
-## Slide 2
-
-
-
-```r
-rnorm(10)
-```
-
-```
-##  [1]  1.18689 -2.80826 -0.50316 -0.18173 -0.08167  0.91087  1.42997
-##  [8]  0.47252 -0.38003 -0.18265
-```
-
---- 
-
-## Slide 3
-
-* Another cool slide  
-* And one more
-
---- &radio
-
-## Quiz
-
-## Question 1
-
-What is 1 + 1?
-
-1. 1
-2. _2_
-3. 3
-4. 4
-
-*** .hint
-
-This is a hint
-
-*** .explanation
-
-This is an explanation
+- Everybody interested in long term performance of stocks and bonds
+- Especially:  
+  - Individuals making financial plans for retirement  
+  - Financial advisors  
+  - Pension funds  
+  - Trusts and endowments  
+  - Economists and financial journalists  
 
 --- &twocol
 
-## Two Column Layout   
-This slide has two columns
+## Why stocks and bonds?
+
+- Stocks and Bonds are two distinct asset classes that usually form a significant part of any long-term investment portfolio
+
+- Asset allocation between Stocks and Bonds is a cumbersome process (sometimes referred to as "investment art"), which among others relies on the following characteristics of the assets classes:
 
 *** {name: left}
+### Bonds 
 
-- point 1
-- point 2
-- point 3
+- lower risks
+- lower rewards
 
 *** {name: right}
+### Stocks  
 
-- point 1
-- point 2
-- point 3  
+- higher risks (measured by return volatility)
+- higher reward (measured by average long-term returns)
+
+
+--- &twocol
+
+## Stocks vs Bonds: historical examples
+
+There were periods when
+
+*** {name: left}
+### Bonds outperformed stocks
+
+
+
+*** {name: right}
+### Stocks outperformed bonds
+
+---
+
+## Next step
+
+- The application with acompanying how-to-use-it **documentation** can be found at
+http://sbushmanov.shinyapps.io/returns/  
+
+- The reproducible code for shiny application can be found at 
+https://github.com/sbushmanov/shiny
+
+- Github repository for this slide deck is at
+https://github.com/sbushmanov/shinyApp_slideDeck
+
