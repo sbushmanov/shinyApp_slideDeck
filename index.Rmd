@@ -1,6 +1,6 @@
 ---
-title       : "Vizualizing historical performance:"
-subtitle    : Stocks vs Bonds (1871 - 2012)
+title       : "vizualizeReturns:"
+subtitle    : R/Shiny application for vizualization of stocks and bonds performance (1871 - 2012)
 author      : Sergey Bushmanov
 job         : Coursera / JHU Data Products Project
 framework   : io2012    # {io2012, html5slides, shower, dzslides, ...}
@@ -11,7 +11,7 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Who this application is for:
+## Who <span style="color:CadetBlue"> vizualizeReturns </span> application is for:
 
 - Everybody interested in long term performance of stocks and bonds
 - Especially:  
@@ -44,11 +44,10 @@ knit        : slidify::knit2slides
 
 --- 
 
-## Stocks vs Bonds: historical volatility
+## Stocks and Bonds exibit significant volatility
 
 ```{r}
-load("./returnData.RData")
-library(ggplot2)
+load("./returnData.RData"); library(ggplot2)
 qplot(data=subset(returnData, year %in% 2000:2009), x=year, y=return, 
       color=variable, geom="line") + labs(title = "Value of $1 invested in 2000 through 2009")
 ```
@@ -56,13 +55,13 @@ qplot(data=subset(returnData, year %in% 2000:2009), x=year, y=return,
 
 ---
 
-## Next step
+## What's my next step?
 
-- The application with accompanying how-to-use-it **documentation** can be found at
+- Try <span style="color:CadetBlue; font-weight: bold"> vizualizeReturns </span> application live together with accompanying **documentation** at
 http://sbushmanov.shinyapps.io/returns/  
 
-- The reproducible code for shiny application can be found at 
+- Find reproducible code for shiny application at 
 https://github.com/sbushmanov/shiny
 
-- Github repository for this slide deck is at
+- Find Github repository for this slide deck at
 https://github.com/sbushmanov/shinyApp_slideDeck

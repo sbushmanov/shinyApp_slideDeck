@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vizualizing historical performance:</title>
+  <title>vizualizeReturns:</title>
   <meta charset="utf-8">
-  <meta name="description" content="Vizualizing historical performance:">
+  <meta name="description" content="vizualizeReturns:">
   <meta name="author" content="Sergey Bushmanov">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,8 +34,8 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Vizualizing historical performance:</h1>
-    <h2>Stocks vs Bonds (1871 - 2012)</h2>
+    <h1>vizualizeReturns:</h1>
+    <h2>R/Shiny application for vizualization of stocks and bonds performance (1871 - 2012)</h2>
     <p>Sergey Bushmanov<br/>Coursera / JHU Data Products Project</p>
   </hgroup>
   <article></article>  
@@ -45,7 +45,7 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Who this application is for:</h2>
+    <h2>Who <span style="color:CadetBlue"> vizualizeReturns </span> application is for:</h2>
   </hgroup>
   <article data-timings="">
     <ul>
@@ -97,11 +97,10 @@
 </slide>
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Stocks vs Bonds: historical volatility</h2>
+    <h2>Stocks and Bonds exibit significant volatility</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">load(&quot;./returnData.RData&quot;)
-library(ggplot2)
+    <pre><code class="r">load(&quot;./returnData.RData&quot;); library(ggplot2)
 qplot(data=subset(returnData, year %in% 2000:2009), x=year, y=return, 
       color=variable, geom=&quot;line&quot;) + labs(title = &quot;Value of $1 invested in 2000 through 2009&quot;)
 </code></pre>
@@ -114,15 +113,15 @@ qplot(data=subset(returnData, year %in% 2000:2009), x=year, y=return,
 
 <slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h2>Next step</h2>
+    <h2>What&#39;s my next step?</h2>
   </hgroup>
   <article data-timings="">
     <ul>
-<li><p>The application with accompanying how-to-use-it <strong>documentation</strong> can be found at
+<li><p>Try <span style="color:CadetBlue; font-weight: bold"> vizualizeReturns </span> application live together with accompanying <strong>documentation</strong> at
 <a href="http://sbushmanov.shinyapps.io/returns/">http://sbushmanov.shinyapps.io/returns/</a>  </p></li>
-<li><p>The reproducible code for shiny application can be found at 
+<li><p>Find reproducible code for shiny application at 
 <a href="https://github.com/sbushmanov/shiny">https://github.com/sbushmanov/shiny</a></p></li>
-<li><p>Github repository for this slide deck is at
+<li><p>Find Github repository for this slide deck at
 <a href="https://github.com/sbushmanov/shinyApp_slideDeck">https://github.com/sbushmanov/shinyApp_slideDeck</a></p></li>
 </ul>
 
@@ -136,7 +135,7 @@ qplot(data=subset(returnData, year %in% 2000:2009), x=year, y=return,
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Who this application is for:'>
+        data-slide=1 title='Who <span style="color:CadetBlue"> vizualizeReturns </span> application is for:'>
          1
       </a>
     </li>
@@ -148,13 +147,13 @@ qplot(data=subset(returnData, year %in% 2000:2009), x=year, y=return,
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Stocks vs Bonds: historical volatility'>
+        data-slide=3 title='Stocks and Bonds exibit significant volatility'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Next step'>
+        data-slide=4 title='What&#39;s my next step?'>
          4
       </a>
     </li>
